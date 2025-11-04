@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0D0D0D;
+    color: #E0E0E0;
+    scroll-behavior: smooth;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: #800020;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeIn 1.5s ease;
+}
+
+.titulo {
+    color: #00FFFF;
+    margin: 0;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* GIF ao lado do nome */
+.gif-tenna {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Menu */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #E0E0E0;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.menu a:hover {
+    color: #00FFFF;
+    transform: scale(1.1);
+}
+
+/* Seções */
+.secao {
+    padding: 60px 10%;
+    text-align: center;
+    animation: slideUp 1s ease;
+}
+
+.secao h2 {
+    color: #00FFFF;
+    margin-bottom: 20px;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    color: #E0E0E0;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #800020;
+    padding: 10px;
+}
+
+th {
+    background-color: #800020;
+    color: #FFF;
+}
+
+tr:hover {
+    background-color: rgba(0, 255, 255, 0.1);
+    transition: background 0.3s;
+}
+
+/* Lista */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: rgba(0, 255, 255, 0.1);
+    margin: 10px auto;
+    padding: 10px;
+    width: 60%;
+    border-left: 5px solid #00FFFF;
+    transition: transform 0.3s, background 0.3s;
+}
+
+ul li:hover {
+    background: rgba(0, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+/* Contato */
+.contato a {
+    color: #00FFFF;
+    text-decoration: none;
+}
+
+.contato a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    color: #999;
+    font-size: 0.9em;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Animação leve no GIF */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+    ul li {
+        width: 90%;
+    }
+    .gif-tenna {
+        width: 45px;
+    }
+}
