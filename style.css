@@ -32,7 +32,7 @@ body {
     width: 100px;
     height: auto;
     border-radius: 8px;
-    animation: float 3s ease-in-out infinite;
+    animation: float 2s ease-in-out infinite;
 }
 
 /* Menu */
