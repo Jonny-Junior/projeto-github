@@ -35,6 +35,13 @@ body {
     animation: float 2s ease-in-out infinite;
 }
 
+.gif-tenna2 {
+    width: 50px;
+    height: auto;
+    border-radius: 8px;
+    animation: float 2s ease-in-out infinite;
+}
+
 /* Menu */
 .menu {
     list-style: none;
